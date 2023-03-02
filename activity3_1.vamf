@@ -1,0 +1,69 @@
+{  "name":"Activity 3 - Repo 2",
+   "shortDescription": "Different repos for Activity Catalog and startup/teardown task",
+   "icon":"customActivityManual.svg",
+   "descriptionMarkdown":"Activity1.md",
+   "topology": [
+{
+      "name": "Topology 1",
+      "actionTitle":"Reserve",
+      "description": "Create an immediate reservation on the topology",
+      "reservationDuration":"",
+      "automation": [
+         {
+            "testPath": "andreea/activity_catalog_assets/sleep.fftc",
+            "allowToRunWithOptions": true,
+            "parametersList":[
+               {
+                  "name": "manifestParam1",
+                  "value": "testValue1",
+                  "type": "TEXT",
+                  "description": "Test Description" 
+               }
+            ]
+         },
+         {
+            "testPath": "andreea/activity_catalog_assets/nothing.fftc",
+            "allowToRunWithOptions": true,
+            "name": "NewNameManifest",
+            "parametersList": [
+               {
+                  "name": "manifestParam2",
+                  "value": "testValue2",
+                  "type": "TEXT",
+                  "description": "Test Description" 
+               }
+            ]
+         }
+      ],
+     "startupTasks": [
+      {
+        "testPath": "andreea/activity_catalog_assets/parameters2.fftc",
+        "parametersList": [
+						{
+							"name": "parameter1",
+							"type": "INTEGER",
+							"value": "27"
+						}
+					]
+      }
+      ],
+    "teardownTasks": [
+      {
+        "testPath": "andreea/activity_catalog_assets/parameters2.fftc",
+	"parameterFilePath": "andreea/activity_catalog_assets/parameters2.ffpt",
+        "parametersList": [
+						{
+							"name": "parameter1",
+							"type": "INTEGER",
+							"value": "27"
+						},
+						{
+							"name": "parameter2",
+							"type": "TEXT",
+							"value": "testValue3"
+						}
+					]
+      }
+      ]
+    }]
+}
