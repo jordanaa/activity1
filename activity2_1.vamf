@@ -37,7 +37,7 @@
       ],
      "startupTasks": [
       {
-        "testPath": "andreea/activity_catalog_assets/parameters.fftc",
+        "testPath": "andreea/activity_catalog_assets/parameters2.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
@@ -63,8 +63,8 @@
       ],
     "teardownTasks": [
       {
-        "testPath": "andreea/activity_catalog_assets/parameters.fftc",
-	"parameterFilePath": "andreea/activity_catalog_assets/parameters.ffpt",
+        "testPath": "andreea/activity_catalog_assets/parameters2.fftc",
+	"parameterFilePath": "andreea/activity_catalog_assets/parameters2.ffpt",
         "parametersList": [
 						{
 							"name": "parameter1",
