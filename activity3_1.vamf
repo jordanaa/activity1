@@ -1,4 +1,4 @@
-{  "name":"Activity 3 - Repo 2",
+{  "name":"Activity 2 - Repo 2",
    "shortDescription": "Different repos for Activity Catalog and startup/teardown task",
    "icon":"customActivityManual.svg",
    "descriptionMarkdown":"Activity1.md",
@@ -37,30 +37,38 @@
       ],
      "startupTasks": [
       {
-        "testPath": "andreea/activity_catalog_assets/parameters2.fftc",
-        "parametersList": [
+        "testPath": "andreea/activity_catalog_assets/sleep.fftc",
+	"requirements":[
 						{
-							"name": "parameter1",
-							"type": "INTEGER",
-							"value": "27"
+							"name": "agent_name",
+							"value": "jordan_1"
+						},
+						{
+							"name": "pool",
+							"value": "startupteardown"
+						},
+						{
+							"name": "pool",
+							"value": "triggered"
 						}
 					]
       }
       ],
     "teardownTasks": [
       {
-        "testPath": "andreea/activity_catalog_assets/parameters2.fftc",
-	"parameterFilePath": "andreea/activity_catalog_assets/parameters2.ffpt",
-        "parametersList": [
+        "testPath": "andreea/activity_catalog_assets/sleep.fftc",
+	"requirements":[
 						{
-							"name": "parameter1",
-							"type": "INTEGER",
-							"value": "27"
+							"name": "agent_name",
+							"value": "jordan_1"
 						},
 						{
-							"name": "parameter2",
-							"type": "TEXT",
-							"value": "testValue3"
+							"name": "pool",
+							"value": "startupteardown"
+						},
+						{
+							"name": "pool",
+							"value": "triggered"
 						}
 					]
       }
