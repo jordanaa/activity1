@@ -48,7 +48,7 @@
 	"requirements":[
 						{
 							"name": "agent_name",
-							"value": "jordan"
+							"value": "jordan_1"
 						},
 						{
 							"name": "pool",
@@ -80,7 +80,7 @@
 	"requirements":[
 						{
 							"name": "agent_name",
-							"value": "jordan"
+							"value": "jordan_1"
 						},
 						{
 							"name": "pool",
