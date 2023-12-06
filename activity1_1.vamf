@@ -11,7 +11,7 @@
       "reservationDuration":""
     },
    {
-      "name": "Topology 1",
+      "name": "Topology 2",
       "actionTitle":"Reserve",
       "description": "Create an immediate reservation on the topology",
       "reservationDuration":""
