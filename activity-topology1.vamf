@@ -14,7 +14,7 @@
       "name": "Topology 1",
       "actionTitle":"Reserve",
       "description": "Create an immediate reservation on the topology",
-      "reservationDuration":""
+      "reservationDuration":"60"
     }
 ]
 }
