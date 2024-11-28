@@ -10,7 +10,7 @@
       "reservationDuration":"",
       "automation": [
          {
-            "testPath": "andreea/activity_catalog_assets/sleep.fftc",
+            "testPath": "jordan1/testcases/parameters-tag-git.fftc",
             "allowToRunWithOptions": true,
             "parametersList":[
                {
@@ -22,7 +22,7 @@
             ]
          },
          {
-            "testPath": "andreea/activity_catalog_assets/nothing.fftc",
+            "testPath": "jordan1/testcases/parameters-tag-git.fftc",
             "allowToRunWithOptions": true,
             "name": "NewNameManifest",
             "parametersList": [
