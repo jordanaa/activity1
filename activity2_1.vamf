@@ -63,8 +63,8 @@
       ],
     "teardownTasks": [
       {
-        "testPath": "andreea/activity_catalog_assets/parameters.fftc",
-	"parameterFilePath": "jordan1/testcases/parameters-tag-git.fftc",
+        "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+	"parameterFilePath": "jordan1/testcases/parameters-tag-git.ffpt",
         "parametersList": [
 						{
 							"name": "parameter1",
