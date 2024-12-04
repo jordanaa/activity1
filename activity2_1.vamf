@@ -2,6 +2,7 @@
    "shortDescription": "Different repos for Activity Catalog and startup/teardown task",
    "icon":"customActivityManual.svg",
    "descriptionMarkdown":"Activity1.md",
+   "priority":60,
    "topology": [
 {
       "name": "Topology 1",
