@@ -1,0 +1,78 @@
+{  "name":"Activity 3 - Repo 2",
+   "shortDescription": "Different repos for Activity Catalog and startup/teardown task",
+   "icon":"customActivityManual.svg",
+   "descriptionMarkdown":"Activity1.md",
+   "priority":59,
+   "topology": [
+{
+      "name": "Topology 1",
+      "actionTitle":"Reserve",
+      "description": "Create an immediate reservation on the topology",
+      "reservationDuration":"",
+      "automation": [
+         {
+            "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+            "allowToRunWithOptions": true,
+            "parametersList":[
+               {
+                  "name": "manifestParam1",
+                  "value": "testValue1",
+                  "type": "TEXT",
+                  "description": "Test Description" 
+               }
+            ]
+         },
+         {
+            "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+            "allowToRunWithOptions": true,
+            "name": "NewNameManifest",
+            "parametersList": [
+               {
+                  "name": "manifestParam2",
+                  "value": "testValue2",
+                  "type": "TEXT",
+                  "description": "Test Description" 
+               }
+            ]
+         }
+      ],
+     "startupTasks": [
+      {
+        "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+	"requirements":[
+						{
+							"name": "agent_name",
+							"value": "jordan_1"
+						},
+						{
+							"name": "pool",
+							"value": "startupteardown"
+						},
+						{
+							"name": "pool",
+							"value": "triggered"
+						}
+					]
+      }
+      ],
+    "teardownTasks": [
+      {
+        "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+	"requirements":[
+						{
+							"name": "agent_name",
+							"value": "jordan_1"
+						},
+						{
+							"name": "pool",
+							"value": "startupteardown"
+						},
+						{
+							"name": "pool",
+							"value": "triggered"
+						}
+					]
+      }
+      ]
+    }]
+}
