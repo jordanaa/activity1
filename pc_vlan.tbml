@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+    <header>
+        <name>pc vlan</name>
+        <description/>
+        <property name="emulation" vendor="com.fnfr">enabled</property>
+    </header>
+    <illustration>
+        <layer/>
+    </illustration>
+    <body>
+        <resources>
+            <resource guid="7b6a484f-d358-4f78-b5c0-7e9aff372ebe" id="i15dcc4c4-4028-4c16-8d07-5f3509d59654" shared="true" type="device">
+                <property isimportant="false" name="name">PC1</property>
+                <property isimportant="false" name="inventoryName">PC1</property>
+                <property isimportant="false" name="description"/>
+                <property isimportant="false" name="utilizationType">SHARED</property>
+                <property isimportant="false" name="ilo_iconId">32d54222-0e82-4349-8a4a-c5505f132aec</property>
+                <property isimportant="false" name="iconURI">ilo://api/repository/v2/asset/32d54222-0e82-4349-8a4a-c5505f132aec?rasterizedIconSize=64</property>
+                <property isimportant="false" name="isIconVisible">true</property>
+                <property isimportant="false" name="reservationTime">IMMEDIATE</property>
+                <property isimportant="false" name="ilo_shape">RECTANGLE</property>
+                <property isimportant="false" name="color">WHITE</property>
+                <property isimportant="false" name="borderColor">SILVER</property>
+                <boundary height="72" width="200" x="-220" y="68"/>
+                <resource guid="b1bb102c-5ffc-4e20-a733-d85477e1c01b" id="i7985b404-ff9d-47d7-a83c-92072c45793d" type="port">
+                    <property isimportant="false" name="name">New port</property>
+                    <property isimportant="false" name="inventoryName">New port</property>
+                    <property isimportant="false" name="description"/>
+                    <property isimportant="false" name="connectivity">connected</property>
+                    <property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+                    <propertyCollection name="System Identification">
+                        <property id="05d79781-56ed-4271-bdc3-9b5d02ec5efc" name="portNumber" type="text" valuelabel="">New port</property>
+                        <property id="22dbb8f6-3f18-8cd5-d420-d018f8fb07bd" name="Port Type" type="text" valuelabel="">Ethernet</property>
+                        <property id="8a4985d2-f726-b8c0-b9ca-f9672edc56a3" name="Port Speed" type="integer" valuelabel="">1000</property>
+                    </propertyCollection>
+                </resource>
+                <propertyCollection name="System Identification">
+                    <property id="30f4f9e7-a9c5-d965-076c-4398b0c73af3" name="ipAddress" type="text" valuelabel=""/>
+                    <property id="2a34ab74-db60-d4d2-e319-612ea197ccb3" name="Hostname" type="text" valuelabel=""/>
+                    <property id="85f0c39e-f61c-e7f1-aad5-e86b87049aa6" name="Make" type="text" valuelabel=""/>
+                    <property id="a793376c-983a-301e-cd96-aa988a16850d" name="Model" type="text" valuelabel=""/>
+                    <property id="e7d6a21c-35d5-902b-b825-da6b5f3f2e7b" name="Serial Number" type="text" valuelabel=""/>
+                    <property id="64339764-bf70-8e7d-83af-f5404ff0f299" name="Console server" type="text" valuelabel=""/>
+                </propertyCollection>
+                <propertyCollection name="Location Information">
+                    <property id="e9c000f3-96ae-6203-842a-f81bc1a68eec" name="Facility" type="text" valuelabel=""/>
+                    <property id="9b777b04-1c6b-f2b5-f58c-19a639d6d571" name="Room" type="text" valuelabel=""/>
+                    <property id="b61d8b19-4132-34f0-4bb8-d3f4933bee30" name="Floor Position" type="text" valuelabel=""/>
+                </propertyCollection>
+                <propertyCollection name="Credentials">
+                    <property id="20c7c9ac-15fd-bd91-a4e7-fcbad4a88681" name="username" type="text" valuelabel=""/>
+                    <property id="6179cc76-38b5-5983-9999-a536276eddb7" name="password" type="password" valuelabel=""/>
+                </propertyCollection>
+            </resource>
+            <resource id="i6ae7eb64-1bfc-439a-bd2e-74bc75f73aaf" shared="false" type="vlan">
+                <property isimportant="false" name="name">VLAN</property>
+                <property isimportant="false" name="description"/>
+                <property isimportant="false" name="color">WHITE</property>
+                <property isimportant="false" name="borderColor">SILVER</property>
+                <propertyCollection name="ID" order="undefined">
+                    <property description="VLAN ID. Example: 302" editable="true" id="id" iscloudspecific="false" isimportant="true" name="ID" required="false" type="VLAN_ID"/>
+                </propertyCollection>
+                <boundary height="120" width="160" x="0" y="-225"/>
+            </resource>
+        </resources>
+        <connectivity>
+            <link id="i58192064-1db7-42ad-b3fd-9eb9512bce3d">
+                <property isimportant="false" name="name">Link</property>
+                <property isimportant="false" name="type">VLAN</property>
+                <property isimportant="false" name="lineStyle">LINEAL</property>
+                <property isimportant="false" name="abstractResourceId"/>
+                <property isimportant="false" name="abstractResourceName"/>
+                <endpoint direction="bidirectional" id="i7985b404-ff9d-47d7-a83c-92072c45793d"/>
+                <endpoint direction="bidirectional" id="i6ae7eb64-1bfc-439a-bd2e-74bc75f73aaf"/>
+                <extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+                <propertyCollection name="connectionType" order="0">
+                    <property isimportant="false" name="id">7202de99-d6e4-77e6-6000-854154035e56</property>
+                    <property isimportant="false" name="description"/>
+                    <property isimportant="false" name="kind">L2</property>
+                    <property isimportant="false" name="shortcut">VLAN</property>
+                </propertyCollection>
+                <propertyCollection name="view" order="0">
+                    <property isimportant="false" name="color">GRAY</property>
+                    <property isimportant="false" name="width">2</property>
+                </propertyCollection>
+            </link>
+        </connectivity>
+    </body>
+</tbml>
