@@ -38,7 +38,7 @@
       ],
      "startupTasks": [
       {
-        "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+        "testPath": "repo/testcases/parameters-tag-git.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
@@ -64,8 +64,7 @@
       ],
     "teardownTasks": [
       {
-        "testPath": "jordan1/testcases/parameters-tag-git.fftc",
-	"parameterFilePath": "jordan1/testcases/parameters-tag-git.ffpt",
+        "testPath": "repo/testcases/parameters-tag-git.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
