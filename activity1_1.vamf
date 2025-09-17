@@ -12,7 +12,7 @@
       "reservationDuration":"",
       "automation": [
                {
-                  "testPath": "main/simpleTestCase/session_profiles/sleep_2min.fftc",
+                  "testPath": "test/activity_catalog_assets/sleep_2min.fftc",
                   "allowToRunWithOptions": true,
                   "parametersList":[
                      {
