@@ -64,7 +64,7 @@
       ],
     "teardownTasks": [
       {
-        "testPath": "repo/testcases/parameters-tag-git.fftc",
+        "testPath": "activity repo/testcases/parameters-tag-git.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
