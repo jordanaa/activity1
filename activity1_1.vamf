@@ -1,6 +1,6 @@
 {
    "name":"Activity 1 - Repo 2",
-   "shortDescription": "Test Activity on eduard-repo2 in master branch",
+   "shortDescription": "Activity with priority:10",
    "icon":"",
    "descriptionMarkdown":"Activity1.md",
    "priority":10,
