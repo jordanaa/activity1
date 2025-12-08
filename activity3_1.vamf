@@ -1,5 +1,5 @@
 {  "name":"Activity 2 - Repo 2",
-   "shortDescription": "Different repos for Activity Catalog and startup/teardown task",
+   "shortDescription": "Different repos for Activity Catalog and startup/teardown task - Activity with priority:5",
    "icon":"customActivityManual.svg",
    "descriptionMarkdown":"Activity1.md",
    "priority":5,
