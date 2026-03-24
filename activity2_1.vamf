@@ -76,7 +76,7 @@
 	"requirements":[
 						{
 							"name": "agent_name",
-							"value": "vel-jordan2.velocity-pv.lwd.spirenteng.com_4"
+							"value": "vel-jordan2.velocity-pv.lwd.spirenteng.com"
 						},
 						{
 							"name": "pool",
