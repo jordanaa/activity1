@@ -1,5 +1,5 @@
 {  "name":"Activity 2 - Repo 2",
-   "shortDescription": "Different repos for Activity Catalog and startup/teardown task / Activity with priority:60",
+   "shortDescription": "RM-379 - Verify startup/teardown tasks with agent requirements specified in activity manifest file",
    "icon":"customActivityManual.svg",
    "descriptionMarkdown":"Activity1.md",
    "priority":60,
@@ -11,7 +11,7 @@
       "reservationDuration":"",
       "automation": [
          {
-            "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+            "testPath": "jordan/testcases/parameters-tag-git.fftc",
             "allowToRunWithOptions": true,
             "parametersList":[
                {
@@ -23,7 +23,7 @@
             ]
          },
          {
-            "testPath": "jordan1/testcases/parameters-tag-git.fftc",
+            "testPath": "jordan/testcases/parameters-tag-git.fftc",
             "allowToRunWithOptions": true,
             "name": "NewNameManifest",
             "parametersList": [
@@ -38,7 +38,7 @@
       ],
      "startupTasks": [
       {
-        "testPath": "activity repo/testcases/parameters-tag-git.fftc",
+        "testPath": "main/simpleTestCase/test_cases/sleep.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
@@ -49,15 +49,11 @@
 	"requirements":[
 						{
 							"name": "agent_name",
-							"value": "jordan_1"
+							"value": "vel-jordan2.velocity-pv.lwd.spirenteng.com"
 						},
 						{
 							"name": "pool",
-							"value": "startupteardown"
-						},
-						{
-							"name": "pool",
-							"value": "triggered"
+							"value": "driver"
 						}
 					]
       }
@@ -80,15 +76,11 @@
 	"requirements":[
 						{
 							"name": "agent_name",
-							"value": "jordan_1"
+							"value": "vel-jordan2.velocity-pv.lwd.spirenteng.com_4"
 						},
 						{
 							"name": "pool",
-							"value": "startupteardown"
-						},
-						{
-							"name": "pool",
-							"value": "triggered"
+							"value": "driver"
 						}
 					]
       }
