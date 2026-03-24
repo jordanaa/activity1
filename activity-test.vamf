@@ -1,5 +1,5 @@
 {  "name":"Activity test",
-   "shortDescription": "Different repos for Activity Catalog and startup/teardown task",
+   "shortDescription": "RM-396 - Verify startup/teardown tasks with parameter values specified in the activity manifest file",
    "icon":"customActivityManual.svg",
    "descriptionMarkdown":"Activity1.md",
    "priority":60,
