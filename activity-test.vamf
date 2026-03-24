@@ -38,7 +38,7 @@
       ],
      "startupTasks": [
       {
-        "testPath": "activity repo/testcases/parameters-tag-git.fftc",
+        "testPath": "test-scm/testcases/parameters-tag-git.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
@@ -50,7 +50,7 @@
       ],
     "teardownTasks": [
       {
-        "testPath": "activity repo/testcases/parameters-tag-git.fftc",
+        "testPath": "test-scm/testcases/parameters-tag-git.fftc",
         "parametersList": [
 						{
 							"name": "parameter1",
