@@ -1,5 +1,5 @@
 {  "name":"Activity 2 - Repo 2",
-   "shortDescription": "RM-379 - Verify startup/teardown tasks with agent requirements specified in activity manifest file",
+   "shortDescription": "RM-379 - Verify startup/teardown tasks with agent requirements specified in activity manifest file (priority 60)",
    "icon":"customActivityManual.svg",
    "descriptionMarkdown":"Activity1.md",
    "priority":60,
